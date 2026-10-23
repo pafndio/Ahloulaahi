@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ahlou Lahi — Inscription des membres</title>
+  <meta name="description" content="Formulaire d'inscription des membres de l'organisation Ahlou Lahi au Sénégal.">
+  <meta name="theme-color" content="#0b5a41">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="preload" href="/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/card.css">
+  <link rel="stylesheet" href="/css/form.css">
+  <script type="module" src="/js/form.js"></script>
+</head>
+<body>
+  <header class="hero pattern-dark">
+    <nav class="topbar">
+      <a class="brand" href="/">
+        <img src="/icons/logo.svg" alt="" width="40" height="40">
+        <span>
+          <strong>Ahlou Lahi</strong>
+          <small class="ar" lang="ar">أهل الله</small>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <span class="net-pill" id="net-pill"></span>
+        <button class="btn btn-sm btn-gold" id="install-btn" hidden>Installer l’application</button>
+        <a class="btn btn-sm btn-glass" href="/admin/" title="Espace administration">Administration</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Recensement des membres · Sénégal</p>
+      <h1>Rejoignez le registre<br>de la communauté</h1>
+      <p class="lead">Quatre étapes et quelques minutes suffisent. L’inscription fonctionne même sans connexion : elle sera envoyée dès votre retour en ligne.</p>
+      <ul class="hero-chips">
+        <li><span>14</span> régions</li>
+        <li><span>46</span> départements</li>
+        <li><span>553</span> communes</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="outbox" id="outbox" hidden></div>
+
+    <section class="wizard card" id="wizard" aria-labelledby="wizard-title">
+      <h2 id="wizard-title" class="sr-only">Formulaire d’inscription</h2>
+      <ol class="stepper" id="stepper"></ol>
+      <form id="member-form" novalidate autocomplete="on">
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="steps" id="steps"></div>
+        <footer class="wizard-nav">
+          <button type="button" class="btn btn-ghost" id="prev-btn">Précédent</button>
+          <span class="step-count" id="step-count"></span>
+          <button type="button" class="btn btn-primary" id="next-btn">Continuer</button>
+          <button type="submit" class="btn btn-primary" id="submit-btn" hidden>Valider mon inscription</button>
+        </footer>
+      </form>
+    </section>
+
+    <section class="success card" id="success" hidden aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ahlou Lahi · Données protégées conformément à la loi n° 2008-12 sur la protection des données à caractère personnel. · <a href="/admin/">Espace administration</a></p>
+  </footer>
+</body>
+</html>

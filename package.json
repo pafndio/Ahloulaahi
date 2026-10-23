@@ -1,0 +1,18 @@
+{
+  "name": "ahloulaahi",
+  "version": "1.0.0",
+  "description": "PWA de recensement des membres de l'organisation Ahlou Lahi au Sénégal, avec espace d'administration sécurisé.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning scripts/seed.mjs",
+    "build:geo": "node scripts/build-geo.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "license": "UNLICENSED"
+}

@@ -41,7 +41,7 @@ avec un espace d'administration sécurisé (tableau de bord, CRUD, recherche).
 
 ## Démarrage
 
-Prérequis : **Node.js 22.5 ou plus récent**. Le projet n'a aucune dépendance npm : il utilise SQLite intégré à Node.
+Prérequis : **Node.js 22.13 ou plus récent** (version LTS). Le projet n'a aucune dépendance npm : il utilise SQLite intégré à Node.
 
 ```bash
 npm start                    # http://localhost:3000  ·  admin : http://localhost:3000/admin

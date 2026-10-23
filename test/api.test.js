@@ -1,3 +1,4 @@
+import '../server/node-check.js';
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
